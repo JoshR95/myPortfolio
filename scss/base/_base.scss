@@ -9,7 +9,7 @@ body{
     // im setting the body to grid to make it easier to layout my content sections
     display: grid;
     grid-template-columns: repeat(5, 1fr); // Updated to create 5 equal columns
-    grid-template-rows: 100vh auto auto 50px;
+    grid-template-rows: auto 100vh auto auto 50px;
     // this sets the whole body to have no margin, so the nav background color and picture go right up to the edge.
     margin: 0px;
 }

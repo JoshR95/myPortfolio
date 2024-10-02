@@ -1,8 +1,13 @@
 nav{
-    grid-row: 1 / -1; // this makes the nav span from the top row as low as possible
-    grid-column: 1 / 2; // this makes the nmav span one full column
+    grid-row: 1 / 2; // this makes the nav span from the top row as low as possible
+    grid-column: 1 / -1; // this makes the nmav span one full column
     background-color: #209855;
     height: 100%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -14,13 +19,13 @@ nav{
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// this hides nav under 767px
 @media(max-width: 767px){
 
-    nav{
+    .nav-initals{
         display: none;
     }
 }
+
 
 // this is making nav show up and just take up 1 column on the left side at 768px and up
 @media(min-width: 768px){

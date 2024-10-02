@@ -1,5 +1,5 @@
 header {
-    grid-row: 1;
+    grid-row: 2; // this starts at grid 2 here so theres space for the nav 
     grid-column: 1 / -1; // this makes it span the whole width in mobile.
     background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
     background-size: cover; /* Ensures the image covers the entire header */
@@ -17,7 +17,7 @@ header {
 @media(min-width: 768px){
 
     header {
-        grid-row: 1;
+        grid-row: 1 / 2; // this spans 1/2 as in this viewport up the nav doesnt occupy the top row anymore
         grid-column: 2 / -1;
         background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
         background-size: cover; /* Ensures the image covers the entire header */
