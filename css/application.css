@@ -1,0 +1,84 @@
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 8, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100vh auto auto 50px;
+  margin: 0px;
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+header {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  background-image: url("../../images/developer-8764521_1920.jpg");
+  /* Update with your image path */
+  background-size: cover;
+  /* Ensures the image covers the entire header */
+  background-position: center;
+  /* Centers the image */
+  height: 100vh;
+  /* Adjust height as needed */
+  color: white;
+  /* Optional: change text color for better visibility */
+}
+
+@media (min-width: 768px) {
+  /* line 19, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+  header {
+    grid-row: 1;
+    grid-column: 2 / -1;
+    background-image: url("../../images/developer-8764521_1920.jpg");
+    /* Update with your image path */
+    background-size: cover;
+    /* Ensures the image covers the entire header */
+    background-position: center;
+    /* Centers the image */
+    height: 100vh;
+    /* Adjust height as needed */
+    color: white;
+    /* Optional: change text color for better visibility */
+  }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+nav {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  background-color: #209855;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  /* line 20, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 28, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  nav {
+    display: block;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background-color: #209855;
+    height: 100%;
+  }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_footer.scss */
+footer {
+  grid-row: 5;
+  grid-column: 1/-1;
+  background-color: red;
+}
+
+/*# sourceMappingURL=application.css.map */

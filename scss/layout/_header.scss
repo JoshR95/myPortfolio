@@ -1,0 +1,28 @@
+header {
+    grid-row: 1;
+    grid-column: 1 / -1; // this makes it span the whole width in mobile.
+    background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Adjust height as needed */
+    color: white; /* Optional: change text color for better visibility */
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/// MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+@media(min-width: 768px){
+
+    header {
+        grid-row: 1;
+        grid-column: 2 / -1;
+        background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
+        background-size: cover; /* Ensures the image covers the entire header */
+        background-position: center; /* Centers the image */
+        height: 100vh; /* Adjust height as needed */
+        color: white; /* Optional: change text color for better visibility */
+    }
+}

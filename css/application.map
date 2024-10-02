@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "application.css",
+	"sources": [
+		"../scss/application.scss",
+		"../scss/base/_index.scss",
+		"../scss/base/_base.scss",
+		"../scss/utilities/_index.scss",
+		"../scss/layout/_index.scss",
+		"../scss/layout/_header.scss",
+		"../scss/layout/_nav.scss",
+		"../scss/layout/_footer.scss",
+		"../scss/modules/_index.scss"
+	],
+	"sourcesContent": [
+		"@import 'base/index';\r\n\r\n@import 'utilities/index';\r\n\r\n@import 'layout/index';\r\n\r\n@import 'modules/index'; ",
+		"@import 'base';",
+		".container{\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    padding-left: 15px;\r\n    padding-right: 15px;\r\n}\r\n\r\nbody{\r\n    // im setting the body to grid to make it easier to layout my content sections\r\n    display: grid;\r\n    grid-template-columns: repeat(5, 1fr); // Updated to create 5 equal columns\r\n    grid-template-rows: 100vh auto auto 50px;\r\n    // this sets the whole body to have no margin, so the nav background color and picture go right up to the edge.\r\n    margin: 0px;\r\n}",
+		"",
+		"@import 'header';\r\n\r\n@import 'nav';\r\n\r\n@import 'footer';",
+		"header {\r\n    grid-row: 1;\r\n    grid-column: 1 / -1; // this makes it span the whole width in mobile.\r\n    background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */\r\n    background-size: cover; /* Ensures the image covers the entire header */\r\n    background-position: center; /* Centers the image */\r\n    height: 100vh; /* Adjust height as needed */\r\n    color: white; /* Optional: change text color for better visibility */\r\n}\r\n\r\n\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////\r\n/// MEDIA QUERIES\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\n\r\n@media(min-width: 768px){\r\n\r\n    header {\r\n        grid-row: 1;\r\n        grid-column: 2 / -1;\r\n        background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */\r\n        background-size: cover; /* Ensures the image covers the entire header */\r\n        background-position: center; /* Centers the image */\r\n        height: 100vh; /* Adjust height as needed */\r\n        color: white; /* Optional: change text color for better visibility */\r\n    }\r\n}",
+		"nav{\r\n    grid-row: 1 / -1; // this makes the nav span from the top row as low as possible\r\n    grid-column: 1 / 2; // this makes the nmav span one full column\r\n    background-color: #209855;\r\n    height: 100%;\r\n}\r\n\r\n\r\n// IMPORTANT !\r\n// HAVE THE NAV BAR ON THE LEFT SHOW FROM 768PX AND UP\r\n\r\n\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////\r\n/// MEDIA QUERIES\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////\r\n\r\n// this hides nav under 767px\r\n@media(max-width: 767px){\r\n\r\n    nav{\r\n        display: none;\r\n    }\r\n}\r\n\r\n// this is making nav show up and just take up 1 column on the left side at 768px and up\r\n@media(min-width: 768px){\r\n\r\n    nav{\r\n        display: block;\r\n        grid-row: 1 / -1; // this makes the nav span from the top row as low as possible\r\n        grid-column: 1 / 2; // this makes the nmav span one full column\r\n        background-color: #209855;\r\n        height: 100%;\r\n    }\r\n}",
+		"footer{\r\n    grid-row: 5;\r\n    grid-column: 1/-1; // Added to make nav span all columns\r\n    background-color: red;\r\n}\r\n\r\n\r\n\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////\r\n/// MEDIA QUERIES\r\n/////////////////////////////////////////////////////////////////////////////////////////////////////",
+		""
+	],
+	"names": [],
+	"mappings": ";AEAA,AAAA,UAAU,CAAA;EACN,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACtB;;;AAED,AAAA,IAAI,CAAA;EAEA,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,kBAAkB,EAAE,oBAAoB;EAExC,MAAM,EAAE,GAAG;CACd;;;AGdD,AAAA,MAAM,CAAC;EACH,QAAQ,EAAE,CAAC;EACX,WAAW,EAAE,MAAM;EACnB,gBAAgB,EAAE,8CAA8C;EAAE,iCAAiC;EACnG,eAAe,EAAE,KAAK;EAAE,gDAAgD;EACxE,mBAAmB,EAAE,MAAM;EAAE,uBAAuB;EACpD,MAAM,EAAE,KAAK;EAAE,6BAA6B;EAC5C,KAAK,EAAE,KAAK;EAAE,uDAAuD;CACxE;;AAQD,MAAM,EAAC,SAAS,EAAE,KAAK;;EAEnB,AAAA,MAAM,CAAC;IACH,QAAQ,EAAE,CAAC;IACX,WAAW,EAAE,MAAM;IACnB,gBAAgB,EAAE,8CAA8C;IAAE,iCAAiC;IACnG,eAAe,EAAE,KAAK;IAAE,gDAAgD;IACxE,mBAAmB,EAAE,MAAM;IAAE,uBAAuB;IACpD,MAAM,EAAE,KAAK;IAAE,6BAA6B;IAC5C,KAAK,EAAE,KAAK;IAAE,uDAAuD;GACxE;;;;AC1BL,AAAA,GAAG,CAAA;EACC,QAAQ,EAAE,MAAM;EAChB,WAAW,EAAE,KAAK;EAClB,gBAAgB,EAAE,OAAO;EACzB,MAAM,EAAE,IAAI;CACf;;AAYD,MAAM,EAAC,SAAS,EAAE,KAAK;;EAEnB,AAAA,GAAG,CAAA;IACC,OAAO,EAAE,IAAI;GAChB;;;AAIL,MAAM,EAAC,SAAS,EAAE,KAAK;;EAEnB,AAAA,GAAG,CAAA;IACC,OAAO,EAAE,KAAK;IACd,QAAQ,EAAE,MAAM;IAChB,WAAW,EAAE,KAAK;IAClB,gBAAgB,EAAE,OAAO;IACzB,MAAM,EAAE,IAAI;GACf;;;;ACjCL,AAAA,MAAM,CAAA;EACF,QAAQ,EAAE,CAAC;EACX,WAAW,EAAE,IAAI;EACjB,gBAAgB,EAAE,GAAG;CACxB"
+}
