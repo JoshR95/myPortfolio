@@ -1,8 +1,8 @@
 
-html {
-    width: 100vw; // Set width to 100% of the viewport width
-
+* {
+    box-sizing: border-box;
 }
+
 
 html, body {
     margin: 0;  // Remove default margin
@@ -22,9 +22,6 @@ body{
     flex-direction: column;
 }
 
-main{
-
-}
 
 // MEDIA BREAKPOINTS - 
 

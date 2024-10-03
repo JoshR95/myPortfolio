@@ -1,6 +1,6 @@
 /* line 2, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
-html {
-  width: 100vw;
+* {
+  box-sizing: border-box;
 }
 
 /* line 7, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
@@ -127,14 +127,8 @@ footer {
   color: white;
 }
 
-/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+/* line 3, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .portfolio {
-  grid-row: 3/4;
-  grid-column: 1 / -1;
-}
-
-/* line 6, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
-.portfolio-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,21 +136,21 @@ footer {
   background-color: #5d777e;
 }
 
-/* line 14, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+/* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .portfolio h2 {
   display: flex;
   text-align: center;
   color: white;
 }
 
-/* line 20, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+/* line 18, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .Project-item {
   width: 100%;
   box-sizing: border-box;
   padding-bottom: 20px;
 }
 
-/* line 26, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+/* line 24, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .Project-item img {
   width: 100%;
   height: auto;
