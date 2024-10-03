@@ -1,13 +1,37 @@
 header {
     grid-row: 2; // this starts at grid 2 here so theres space for the nav 
     grid-column: 1 / -1; // this makes it span the whole width in mobile.
-    background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
+    background-image: url('../../images/network-4851119_1920.jpg'); /* Update with your image path */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Centers the image */
     height: 100vh; /* Adjust height as needed */
     color: white; /* Optional: change text color for better visibility */
 }
 
+.hero-container {
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between title and scroll */
+    height: 100%; /* Ensure it takes full height of the header */
+}
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-scroll{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
@@ -19,7 +43,6 @@ header {
     header {
         grid-row: 1 / 2; // this spans 1/2 as in this viewport up the nav doesnt occupy the top row anymore
         grid-column: 2 / -1;
-        background-image: url('../../images/developer-8764521_1920.jpg'); /* Update with your image path */
         background-size: cover; /* Ensures the image covers the entire header */
         background-position: center; /* Centers the image */
         height: 100vh; /* Adjust height as needed */

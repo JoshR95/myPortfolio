@@ -1,7 +1,7 @@
 nav{
     grid-row: 1 / 2; // this makes the nav span from the top row as low as possible
     grid-column: 1 / -1; // this makes the nmav span one full column
-    background-color: #209855;
+    background-color: $third-color;
     height: 100%;
 }
 
@@ -10,6 +10,38 @@ nav{
     justify-content: center;
 }
 
+// HAMBURGER ICON 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// We make this relative to the hamburger lines can be positioned according to this elements position
+.hamburger-icon{
+    position: relative; 
+    background-color: $third-color;
+    width: 100px;
+    height: 56px;
+    margin: 10px 0px;
+
+}
+
+.hamburger-line{
+    width: 45px;
+    height: 4px;
+    background-color: #fff;
+    margin: 8px 0;
+    
+}
+
+// This moves relative to the hamburger-icons top left corners position because of absolute
+// we then move it down and left 50%, this would have it off the box, so we use transfrom: translate()
+// to move it back right and up 50% of its own width; effectivley centering it.
+.hamburger-line-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // IMPORTANT !
 // HAVE THE NAV BAR ON THE LEFT SHOW FROM 768PX AND UP
@@ -21,9 +53,12 @@ nav{
 
 @media(max-width: 767px){
 
-    .nav-initals{
+    .nav-initals,
+    .links-container{
         display: none;
     }
+
+
 }
 
 
@@ -34,7 +69,6 @@ nav{
         display: block;
         grid-row: 1 / -1; // this makes the nav span from the top row as low as possible
         grid-column: 1 / 2; // this makes the nmav span one full column
-        background-color: #209855;
         height: 100%;
     }
 }

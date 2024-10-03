@@ -1,3 +1,9 @@
+
+html {
+    width: 100vw; // Set width to 100% of the viewport width
+}
+
+
 .container{
     margin-right: auto;
     margin-left: auto;
@@ -13,3 +19,15 @@ body{
     // this sets the whole body to have no margin, so the nav background color and picture go right up to the edge.
     margin: 0px;
 }
+
+// MEDIA BREAKPOINTS - 
+
+// XS ? no media queries as this is default when developing (mobile first, aim to make sure this works from 280px and above)
+
+// Small devices ? min-width: 576px and up
+
+// Medium devices ? min-width: 768px and up
+
+// Large devices ? min-width 992px and up
+
+// Extra-large devices ? min-width: 1200px and up

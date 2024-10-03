@@ -1,0 +1,31 @@
+.portfolio{
+    grid-row: 2/3;
+    grid-column: 1 / -1;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Centers children horizontally
+    justify-content: center; // Centers children vertically
+    background-color: $third-color;
+}
+
+.portfolio h2 {
+    display: flex;
+    text-align: center;
+    color: $white;
+}
+
+.Project-item {
+    width: 100%; 
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    // this is keeping the image at 100% of its container
+    img {
+        width: 100%; 
+        height: auto;
+        box-shadow: 0 5px 12px $white;  
+    }
+}
