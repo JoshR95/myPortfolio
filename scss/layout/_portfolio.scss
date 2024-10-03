@@ -6,6 +6,7 @@
     align-items: center; // Centers children horizontally
     justify-content: center; // Centers children vertically
     background-color: $third-color;
+    box-shadow: inset 0 0 30px $fourth-color; 
 
 }
 

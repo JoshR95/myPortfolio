@@ -1,0 +1,21 @@
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2{
+        color: $fourth-color;
+        font-size: 1.8rem;
+        text-decoration: underline;
+        margin-bottom: -10px;
+    }
+    p{
+        font-size: 1.3rem;
+        color: $third-color;
+    }
+    .icon-arrow-down{
+        font-size: 2rem;
+        color: $fourth-color;
+    }
+}
