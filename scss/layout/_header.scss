@@ -1,5 +1,5 @@
 header {
-    grid-row: 2; // this starts at grid 2 here so theres space for the nav 
+    grid-row: 2/3; // this starts at grid 2 here so theres space for the nav 
     grid-column: 1 / -1; // this makes it span the whole width in mobile.
     background-image: url('../../images/network-4851119_1920.jpg'); /* Update with your image path */
     background-size: cover; /* Ensures the image covers the entire header */
@@ -41,11 +41,6 @@ header {
 @media(min-width: 768px){
 
     header {
-        grid-row: 1 / 2; // this spans 1/2 as in this viewport up the nav doesnt occupy the top row anymore
-        grid-column: 2 / -1;
-        background-size: cover; /* Ensures the image covers the entire header */
-        background-position: center; /* Centers the image */
-        height: 100vh; /* Adjust height as needed */
-        color: white; /* Optional: change text color for better visibility */
+
     }
 }

@@ -1,8 +1,13 @@
 
 html {
     width: 100vw; // Set width to 100% of the viewport width
+
 }
 
+html, body {
+    margin: 0;  // Remove default margin
+    padding: 0; // Remove default padding
+}
 
 .container{
     margin-right: auto;
@@ -13,11 +18,12 @@ html {
 
 body{
     // im setting the body to grid to make it easier to layout my content sections
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); // Updated to create 5 equal columns
-    grid-template-rows: auto 100vh auto auto 50px;
-    // this sets the whole body to have no margin, so the nav background color and picture go right up to the edge.
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+
 }
 
 // MEDIA BREAKPOINTS - 
@@ -31,3 +37,11 @@ body{
 // Large devices ? min-width 992px and up
 
 // Extra-large devices ? min-width: 1200px and up
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/// MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// IMPORTANT -
+// this main code means that in 768px and up the content block shifts up and takes the space the nav had in mobile view
+// if this isnt here then there a blank space 
