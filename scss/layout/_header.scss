@@ -21,6 +21,10 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
+    h1{
+        margin-bottom: -10px;
+    }
 
 }
 
@@ -31,12 +35,22 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    .icon-arrow-down{
+        font-size: 2rem;
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@media(max-width: 767px){
+    // this is here so we can see the scroll down and arrow in the mobile view view without scrolling
+    .hero-scroll{
+        margin-bottom: 100px;
+    }
+}
 
 @media(min-width: 768px){
 

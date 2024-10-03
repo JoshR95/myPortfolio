@@ -1,15 +1,23 @@
-/* line 2, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+html {
+  font-size: 16px;
+  line-height: 1.42857143;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* line 9, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 7, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 14, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 19, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -17,7 +25,7 @@ html, body {
   padding-right: 15px;
 }
 
-/* line 19, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 26, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 body {
   display: flex;
   flex-direction: column;
@@ -58,9 +66,15 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: 1.2rem;
 }
 
-/* line 27, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+/* line 25, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+.hero-title h1 {
+  margin-bottom: -10px;
+}
+
+/* line 31, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-scroll {
   display: flex;
   flex-direction: column;
@@ -68,6 +82,19 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* line 39, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+.hero-scroll .icon-arrow-down {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  /* line 50, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+  .hero-scroll {
+    margin-bottom: 100px;
+  }
 }
 
 /* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
@@ -138,23 +165,45 @@ footer {
 
 /* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .portfolio h2 {
-  display: flex;
-  text-align: center;
   color: white;
+  font-size: 1.8rem;
+  text-decoration: underline;
 }
 
 /* line 18, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .Project-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   padding-bottom: 20px;
 }
 
-/* line 24, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+/* line 27, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .Project-item img {
   width: 100%;
   height: auto;
+  border-radius: 10%;
   box-shadow: 0 5px 12px white;
+}
+
+/* line 33, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+.Project-item h3 {
+  color: white;
+}
+
+/* line 36, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+.Project-item a {
+  background-color: #0c2e3b;
+  color: white;
+  border: 2px solid #548597;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=application.css.map */
