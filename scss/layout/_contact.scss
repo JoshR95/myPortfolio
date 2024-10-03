@@ -4,18 +4,51 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: $fourth-color;
     h2{
-        color: $fourth-color;
+        color: $white;
         font-size: 1.8rem;
         text-decoration: underline;
         margin-bottom: -10px;
     }
     p{
         font-size: 1.3rem;
-        color: $third-color;
+        color: $white;
+        
     }
     .icon-arrow-down{
         font-size: 2rem;
-        color: $fourth-color;
+        color: $white;
+        margin-bottom: 20px;
     }
+}
+
+.contact-form{
+    width: 100%;
+}
+// this makes the inputs the full width of its container
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact-form div{
+    margin-bottom: 10px;
+}
+// this colours the input fields background colour and the text when typed into it 
+.colored-input{
+    background-color: $third-color;
+    box-shadow: inset 0 0 3px $white; 
+    color: $white;
+    &:focus {
+        // this changes the color of the outline when the input box is clicked on 
+        outline: 2px solid $white;
+    }
+}
+
+// this makes the placeholder text white 
+input::placeholder {
+    color: $white; 
+    opacity: 1; 
 }

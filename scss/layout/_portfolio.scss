@@ -36,6 +36,7 @@
     }
     a{
         background-color: $fourth-color;
+        box-shadow: inset 0 0 5px $third-color; 
         color: $white;
         border: 2px solid $second-color;
         border-radius: 5px;

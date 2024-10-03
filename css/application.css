@@ -150,7 +150,8 @@ nav {
 footer {
   grid-row: 5;
   grid-column: 1/-1;
-  background-color: #0c2e3b;
+  background-color: #5d777e;
+  box-shadow: inset 0 0 30px #0c2e3b;
   color: white;
 }
 
@@ -197,6 +198,7 @@ footer {
 /* line 37, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
 .Project-item a {
   background-color: #0c2e3b;
+  box-shadow: inset 0 0 5px #5d777e;
   color: white;
   border: 2px solid #548597;
   border-radius: 5px;
@@ -214,26 +216,63 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #0c2e3b;
 }
 
-/* line 7, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+/* line 8, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
 .contact-me h2 {
-  color: #0c2e3b;
+  color: white;
   font-size: 1.8rem;
   text-decoration: underline;
   margin-bottom: -10px;
 }
 
-/* line 13, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+/* line 14, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
 .contact-me p {
   font-size: 1.3rem;
-  color: #5d777e;
+  color: white;
 }
 
-/* line 17, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+/* line 19, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
 .contact-me .icon-arrow-down {
   font-size: 2rem;
-  color: #0c2e3b;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+.contact-form {
+  width: 100%;
+}
+
+/* line 30, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 36, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+.contact-form div {
+  margin-bottom: 10px;
+}
+
+/* line 40, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+.colored-input {
+  background-color: #5d777e;
+  box-shadow: inset 0 0 3px white;
+  color: white;
+}
+
+/* line 44, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+.colored-input:focus {
+  outline: 2px solid white;
+}
+
+/* line 51, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_contact.scss */
+input::placeholder {
+  color: white;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=application.css.map */
