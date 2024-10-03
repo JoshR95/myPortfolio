@@ -10,8 +10,29 @@ nav{
 
 .nav-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
+// aligns the initals 
+.nav-initals{
+    text-align: center;
+    font-size: 2rem;
+    // brings the links closer to the initals 
+    margin-bottom: -20px;
+}
+
+// Remove bullet points
+.pages-links{
+    list-style-type: none;
+    padding-bottom: 50px;
+    // removes underline
+    li a{
+    text-decoration: none;
+    }
+}
+
+
 
 // HAMBURGER ICON 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -55,11 +76,16 @@ nav{
 
 @media(max-width: 767px){
 
-    .nav-initals,
-    .links-container{
+    // .nav-initals,
+    // .links-container{
+    //     display: none;
+    // }
+
+    // IMPORTANT - THIS WIILL NOT BE HIDDEN WHEN I DO JAVA SCRIPT, THE OTHETR BITS 
+    // WILL BE AND THEN DROP DOWN 
+    .hamburger-icon{
         display: none;
     }
-
 
 }
 
