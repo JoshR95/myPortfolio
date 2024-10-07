@@ -31,6 +31,14 @@ body {
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  /* line 53, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+  .main-container {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
 /* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 header {
   background-image: url("../../images/network-4851119_1920.jpg");
@@ -195,6 +203,17 @@ nav {
   /* line 110, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .hamburger-icon {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 120, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
   }
 }
 

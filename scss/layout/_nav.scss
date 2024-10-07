@@ -118,6 +118,12 @@ nav{
 @media(min-width: 768px){
 
     nav{
-
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 20%;
+        height: 100vh;
+        position: fixed;
     }
+
+    
 }

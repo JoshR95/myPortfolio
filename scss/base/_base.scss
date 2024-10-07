@@ -46,6 +46,12 @@ body{
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// IMPORTANT -
-// this main code means that in 768px and up the content block shifts up and takes the space the nav had in mobile view
-// if this isnt here then there a blank space 
+// this sets the main containers content to 80%, then the nav is set to 20% in the nav.scss, this means
+// we can have the nav running down the left, the main content on the right at 100% of the vh together,
+// then the margin-left will push the main content to the right by whatever the navs width is. 
+@media(min-width: 768px){
+    .main-container{
+        width: 80%;
+        margin-left: 20%;
+    }
+}
