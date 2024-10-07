@@ -314,19 +314,18 @@ footer {
   align-items: center;
   gap: 20px;
   width: 100%;
-  max-width: 1200px;
   padding: 20px;
 }
 
 @media (min-width: 768px) {
-  /* line 81, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 80, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .project-item a {
     font-size: 14px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 89, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 88, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -334,11 +333,11 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 100, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 99, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid .project-item:nth-child(n+5):nth-child(-n+6) {
     display: block;
   }
-  /* line 104, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 103, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -346,11 +345,11 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  /* line 113, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 112, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid .project-item.hidden:nth-child(n+5):nth-child(-n+9) {
     display: block;
   }
-  /* line 117, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 116, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
