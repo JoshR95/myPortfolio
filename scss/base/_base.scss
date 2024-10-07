@@ -23,6 +23,8 @@ html, body {
     padding-right: 15px;
 }
 
+
+
 body{
     // im setting the body to grid to make it easier to layout my content sections
     display: flex;
@@ -50,8 +52,8 @@ body{
 // we can have the nav running down the left, the main content on the right at 100% of the vh together,
 // then the margin-left will push the main content to the right by whatever the navs width is. 
 @media(min-width: 768px){
-    .main-container{
-        width: 80%;
-        margin-left: 20%;
+    .main-container {
+        width: calc(100% - 200px);
+        margin-left: 200px; 
     }
 }

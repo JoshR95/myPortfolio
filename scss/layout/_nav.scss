@@ -6,6 +6,7 @@ nav{
     background-color: $primary-color;
     box-shadow: inset 0 0 30px $fourth-color; 
     height: 100%;
+    width: 200px
 }
 
 .nav-container{
@@ -109,6 +110,11 @@ nav{
 
 @media(max-width: 767px){
 
+    // this allows the nav to stretch to 100% when the navs at the top
+    nav{
+        max-width: 100%
+    }
+
     .nav-initals,
     .links-container,
     .nav-socials{
@@ -130,13 +136,16 @@ nav{
     nav{
         flex-direction: column;
         justify-content: flex-start;
-        width: 20%;
         height: 100vh;
         position: fixed;
     }
 
     .hamburger-icon{
         display: none;
+    }
+
+    .nav-initals{
+        margin-bottom: 150px;
     }
     
 }
