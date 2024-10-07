@@ -1,6 +1,4 @@
 header {
-    grid-row: 2/3; // this starts at grid 2 here so theres space for the nav 
-    grid-column: 1 / -1; // this makes it span the whole width in mobile.
     background-image: url('../../images/network-4851119_1920.jpg'); /* Update with your image path */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Centers the image */
@@ -52,9 +50,12 @@ header {
     }
 }
 
+@media(min-width: 576px) and (max-width: 767px){
+    .hero-title{
+        font-size: 1.8rem;
+    }
+}
+
 @media(min-width: 768px){
 
-    header {
-
-    }
 }
