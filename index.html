@@ -36,12 +36,12 @@
 
         <div class="links-container">
           <ul class="pages-links"> 
-            <!--Portfolio is homepage -->    
+            <!--Portfolio is homepage -->
+            <li><a href="./pages/about.html">About Me</a></li>    
             <li><a href="#portfolio">My Portfolio</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#code-examples">Code Examples</a></li>
-            <li><a href="#scs-scheme">SCS Scheme</a></li>
-            <li><a href="#scs-scheme">SCS Scheme</a></li>
+            <li><a href="./pages/codeExamples.html">Code Examples</a></li>
+            <li><a href="./pages/scsScheme.html">SCS Scheme</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
           </ul>
         </div>
 
@@ -69,7 +69,7 @@
 
       <main>
         <!--PORTFOLIO-->
-        <div class="portfolio container">
+        <div id="portfolio" class="container">
           <h2>My Projects</h2>
           <div class="portfolio-grid">
             <div class="project-item">
@@ -139,7 +139,7 @@
         </div>
 
         <!--CONTACT ME-->
-        <div class="contact-me container">
+        <div id="contact-me" class="container">
           <h2>Get in contact</h2>
           <p>If you'd like to contact me please use the form below </p>
           <span class="icon-arrow-down"></span>
@@ -166,7 +166,7 @@
             </div>
             <div>
               <label for="message"></label>
-              <input type="text" id="message" name="message" class="colored-input" placeholder="Message">
+              <textarea id="message" name="message" class="colored-input large-input" placeholder="Message"></textarea>
             </div>
 
             <div>
@@ -176,6 +176,10 @@
         </div>
       </div>
     </main>
+
+    <div class="bottom-scroll">
+
+    </div>
 
     <footer>
         <p> Josh Rickards &copy;</p>

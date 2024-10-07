@@ -1,4 +1,4 @@
-.contact-me{
+#contact-me{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,10 +24,11 @@
 }
 
 .contact-form{
-    width: 100%;
+    width: 80%;
 }
 // this makes the inputs the full width of its container
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -48,7 +49,11 @@
 }
 
 // this makes the placeholder text white 
-input::placeholder {
+// had to add font family because text area was being weird and had a different font.
+input::placeholder,
+textarea::placeholder {
+    font-family: $primary-font--family;
+    font-weight: $primary-font--weight;
     color: $white; 
     opacity: 1; 
 }
@@ -62,12 +67,12 @@ input::placeholder {
     border: 2px solid $second-color;
 }
 
+.large-input {
+    height: 150px;
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-@media(min-width: 576px) and (max-width: 767px){
-    .contact-form{
-        width: 80%;
-    }
-}
