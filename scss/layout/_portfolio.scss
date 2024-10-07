@@ -85,14 +85,30 @@
 
 
 @media(min-width: 768px) and (max-width: 991px){
+
+    // means when the portfolio link is clicked it shows only the portfolio section on the screen
+    #portfolio{
+        height: 100vh;
+    }
+
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .project-item{
+        margin-bottom: 50px;
     }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
+
+    // means when the portfolio link is clicked it shows only the portfolio section on the screen
+    #portfolio{
+        height: 100vh;
+    }
+
 
     // this shows the 5th and 6th child in portfolio-grid. i have set these unshown items 
     // to dislay none with the .hidden class to allow this to work
@@ -104,6 +120,11 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .project-item{
+        margin-bottom: 50px;
+    }
+
   }
 
   @media(min-width: 1100px){
