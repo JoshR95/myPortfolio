@@ -3,6 +3,7 @@ header {
     background-position: center; /* Centers the image */
     height: 100vh; /* Adjust height as needed */
     color: white; /* Optional: change text color for better visibility */
+    z-index: -1;
 }
 
 // this is setting the container height and the way things are positioned within the container
