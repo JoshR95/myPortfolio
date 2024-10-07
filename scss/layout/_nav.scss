@@ -16,12 +16,13 @@ nav{
 }
 
 // aligns the initals 
-.nav-initals{
+.nav-initals a{
     text-align: center;
     font-size: 2rem;
     // brings the links closer to the initals 
     margin-bottom: -20px;
     color: $white;
+    text-decoration: none;
     // gives the initals a slight shadow
     text-shadow: 1px 1px 0 black, 
                 -1px -1px 0 black,
@@ -139,3 +140,4 @@ nav{
     }
     
 }
+

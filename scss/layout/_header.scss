@@ -28,9 +28,6 @@ header {
     z-index: -1;
 }
 
-
-
-
 .hero-title{
     display: flex;
     flex-direction: column;
@@ -51,9 +48,14 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: $white;
     margin-bottom: 20px;
     font-size: 1.5rem;
     z-index: 1;
+    p{
+        margin-bottom: 0;
+    }
     .icon-arrow-down{
         font-size: 2rem;
     }
@@ -64,18 +66,40 @@ header {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media(max-width: 767px){
+    
+    // this is taking of the height of the nav bar in mobile viewports so the header and nav combined are 100vh
+    header{
+        height: calc(100vh - 76px);
+    }
+
+    
     // this is here so we can see the scroll down and arrow in the mobile view view without scrolling
     .hero-scroll{
         margin-bottom: 100px;
     }
+
 }
 
 @media(min-width: 576px) and (max-width: 767px){
     .hero-title{
-        font-size: rem;
+        font-size: 1.8rem;
+    }
+    .hero-scroll{
+        font-size: 2.2rem;
+        .icon-arrow-down{
+            font-size: 3rem;
+        }
     }
 }
 
-@media(min-width: 768px){
-
+@media(min-width: 768px) and (max-width: 991px){
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero-scroll{
+        font-size: 2.2rem;
+        .icon-arrow-down{
+            font-size: 3rem;
+        }
+    }
 }
