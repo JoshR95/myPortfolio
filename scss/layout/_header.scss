@@ -1,8 +1,9 @@
+// The header needs a background of -1 so the picture can fit the screen correctly and the writing can go on top
 header {
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-    height: 100vh; /* Adjust height as needed */
-    color: white; /* Optional: change text color for better visibility */
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    color: white; 
     z-index: -1;
 }
 
