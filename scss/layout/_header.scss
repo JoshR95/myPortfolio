@@ -1,17 +1,33 @@
 header {
-    background-image: url('../../images/network-4851119_1920.jpg'); /* Update with your image path */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Centers the image */
     height: 100vh; /* Adjust height as needed */
     color: white; /* Optional: change text color for better visibility */
 }
 
+// this is setting the container height and the way things are positioned within the container
 .hero-container {
-    display: flex; /* Make it a flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Space between title and scroll */
-    height: 100%; /* Ensure it takes full height of the header */
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100vh; 
 }
+
+// this is making the picture be placed at the top left of the hero-container as this is 
+// relative positioned, the z index lets it sit behind the text 
+.hero-picture {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
 
 .hero-title{
     display: flex;
@@ -52,7 +68,7 @@ header {
 
 @media(min-width: 576px) and (max-width: 767px){
     .hero-title{
-        font-size: 1.8rem;
+        font-size: rem;
     }
 }
 

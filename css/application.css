@@ -41,8 +41,6 @@ body {
 
 /* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 header {
-  background-image: url("../../images/network-4851119_1920.jpg");
-  /* Update with your image path */
   background-size: cover;
   /* Ensures the image covers the entire header */
   background-position: center;
@@ -55,17 +53,25 @@ header {
 
 /* line 9, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-container {
+  position: relative;
   display: flex;
-  /* Make it a flex container */
   flex-direction: column;
-  /* Stack children vertically */
   justify-content: space-between;
-  /* Space between title and scroll */
-  height: 100%;
-  /* Ensure it takes full height of the header */
+  height: 100vh;
 }
 
-/* line 16, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+/* line 19, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+.hero-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* line 32, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-title {
   display: flex;
   flex-direction: column;
@@ -75,12 +81,12 @@ header {
   font-size: 1.2rem;
 }
 
-/* line 23, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+/* line 39, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-title h1 {
   margin-bottom: -10px;
 }
 
-/* line 29, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+/* line 45, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-scroll {
   display: flex;
   flex-direction: column;
@@ -91,22 +97,22 @@ header {
   font-size: 1.5rem;
 }
 
-/* line 37, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+/* line 53, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
 .hero-scroll .icon-arrow-down {
   font-size: 2rem;
 }
 
 @media (max-width: 767px) {
-  /* line 48, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+  /* line 64, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
   .hero-scroll {
     margin-bottom: 100px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 54, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
+  /* line 70, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_header.scss */
   .hero-title {
-    font-size: 1.8rem;
+    font-size: rem;
   }
 }
 
