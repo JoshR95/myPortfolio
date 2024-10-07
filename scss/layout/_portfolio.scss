@@ -1,22 +1,21 @@
 
 
 .portfolio{
-    display: flex;
-    flex-direction: column;
-    align-items: center; // Centers children horizontally
-    justify-content: center; // Centers children vertically
     background-color: $primary-color;
     box-shadow: inset 0 0 40px $fourth-color; 
 
 }
 
 .portfolio h2 {
+    text-align: center;
     color: $white;
     font-size: 1.8rem;
     text-decoration: underline;
+    margin-top: 0;
+    padding-top: 20px;
 }
 
-.Project-item {
+.project-item {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -49,6 +48,23 @@
 
 }
 
+.hidden{
+    display: none;
+}
+
+// this is setting the grid for item allignment
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,9 +76,46 @@
 //     }
 // }
 
-
 @media(min-width: 768px){
-    portfolio{
-
+    .project-item{
+        a{
+            font-size: 14px;
+        }
     }
 }
+
+
+@media(min-width: 768px) and (max-width: 991px){
+    .portfolio-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    // this shows the 5th and 6th child in portfolio-grid. i have set these unshown items 
+    // to dislay none with the .hidden class to allow this to work
+    .portfolio-grid .project-item:nth-child(n+5):nth-child(-n+6) {
+      display: block; 
+    }
+
+    .portfolio-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    // this shows the children elements from the 5th to the 9th
+    .portfolio-grid .project-item.hidden:nth-child(n+5):nth-child(-n+9) {
+      display: block; 
+    }
+
+    .portfolio-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+  }

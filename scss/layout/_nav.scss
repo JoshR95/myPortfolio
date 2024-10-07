@@ -32,9 +32,14 @@ nav{
 // Remove bullet points
 .pages-links{
     list-style-type: none;
+    padding: 0;
     padding-bottom: 20px;
     li{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        background-color: $second-color;
+        border-radius: 5%;
+        padding: 5px;
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
     }
 
     // removes underline
@@ -46,13 +51,17 @@ nav{
 
 .nav-socials{
     text-align: center;
-    padding-left: 15px;
     padding-bottom: 10px;
     a{
         font-size: 2rem;
         color: $white;
         text-decoration: none;
     }
+}
+
+.links-container{
+    text-align: center;
+    padding-left: 0px;
 }
 
 
@@ -125,5 +134,8 @@ nav{
         position: fixed;
     }
 
+    .hamburger-icon{
+        display: none;
+    }
     
 }
