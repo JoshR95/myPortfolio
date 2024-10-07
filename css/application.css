@@ -254,7 +254,7 @@ nav {
 @media (max-width: 767px) {
   /* line 114, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   nav {
-    max-width: 100%;
+    width: 100%;
   }
   /* line 118, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .nav-initals,
@@ -521,6 +521,48 @@ textarea::placeholder {
   #contact-me h2 {
     font-size: 2.6rem;
   }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
+.about-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: #0c2e3b;
+}
+
+/* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
+#about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0c2e3b;
+  background-color: white;
+  box-shadow: inset 0 0 15px #0c2e3b;
+  height: 400px;
+}
+
+/* line 22, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
+#about-text h2,
+#about-text p {
+  margin: 0px;
+  padding: 20px 0 20px 20px;
+}
+
+/* line 27, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
+#about-text h2 {
+  font-size: 2.2rem;
+}
+
+/* line 30, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
+#about-text p {
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=application.css.map */
