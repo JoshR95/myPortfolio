@@ -33,7 +33,7 @@ body {
 
 /* line 38, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 #moving-background {
-  background-image: url("../../images/network-4851119_1920.jpg");
+  background-image: url("/images/network-4851119_1920.jpg");
   background-size: cover;
   -webkit-animation: slidein 25s;
   animation: slidein 25s;
