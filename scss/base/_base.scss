@@ -36,7 +36,9 @@ body{
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 #moving-background {
-    background-image: url('images/network-4851119_1920.jpg');
+    background-image: 
+    url('/yourrepo/images/network-4851119_1920.jpg'), /* Main background */
+    url('../../images/network-4851119_1920.jpg'); /* Fallback for local */
     background-size:cover;
         -webkit-animation: slidein 25s;
         animation: slidein 25s;
