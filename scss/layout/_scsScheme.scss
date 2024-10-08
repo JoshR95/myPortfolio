@@ -18,8 +18,9 @@
     width: 100%;
     font-size: 1rem;
     background-color: $primary-color-dark;
+    box-shadow: 0 5px 10px $white; 
     margin: 20px 0;
-    padding: 10px;
+    padding: 15px;
     h2 {
         text-decoration: underline;
         padding-bottom: 10px;
@@ -63,6 +64,7 @@
 
 @media(min-width: 768px){
 
+
     // this pushes the element to the right side
     .scs-left-element {
         align-self: flex-start; 
@@ -75,6 +77,8 @@
     }
 
     .scs-scheme-element{
+        // this mixins makes the element move up when hovered over
+        @include hover-move;
         max-width: 570px;
         margin: 10px 0; 
     }
