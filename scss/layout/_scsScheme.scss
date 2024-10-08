@@ -7,7 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: auto;
+    justify-content: center;
+    min-height: 100%; // Ensure it takes full height of the parent
+    width: 100%; // Ensure it takes full width of the parent
     color: $white;
 }
 
@@ -21,6 +23,9 @@
     h2 {
         text-decoration: underline;
         padding-bottom: 10px;
+    }
+    a{
+        color: $third-color;
     }
 }
 
@@ -58,11 +63,41 @@
 
 @media(min-width: 768px){
 
+    // this pushes the element to the right side
+    .scs-left-element {
+        align-self: flex-start; 
+
+    }
+
+    // this pushes the element to the right side
+    .scs-right-element {
+        align-self: flex-end; 
+    }
+
     .scs-scheme-element{
         max-width: 570px;
+        margin: 10px 0; 
     }
 
     .scs-scheme-main-container{
-        height: calc(100vh - 50px);
+        height: calc(100vh - 55px);
     }
+
+}
+
+@media(min-width: 1400px){
+
+    .scs-scheme-element{
+        font-size: 1.2rem;
+        
+    }
+    
+    .scs-left-element{
+        max-width: 1000px;
+    }
+
+    .scs-right-element{
+        max-width: 800px;
+    }
+
 }
