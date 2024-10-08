@@ -1,0 +1,68 @@
+
+.scs-scheme-main-container{
+    background-color: $fourth-color;
+}
+
+.scs-scheme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    color: $white;
+}
+
+// styling the content blocks, the width will change at higher viewports
+.scs-scheme-element {
+    width: 100%;
+    font-size: 1rem;
+    background-color: $primary-color-dark;
+    margin: 20px 0;
+    padding: 10px;
+    h2 {
+        text-decoration: underline;
+        padding-bottom: 10px;
+    }
+}
+
+// only alligns the text for the elements on the left 
+.scs-left-element{
+    text-align: center;
+}
+
+
+.scs-right-element{
+    h2{
+        padding-left: 20px;
+    }
+}
+
+.scs-scheme-element p,
+.scs-scheme-element ul,
+.scs-scheme-element h2 {
+    width: 100%;
+    margin: 0; 
+
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
+/// MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////
+
+// ive given this a max-width of 450px as it looks weird with 100% and it breaks up the content a bit at lower viewports
+@media(max-width: 767px){
+    .scs-right-element{
+        max-width: 450px;
+    }
+}
+
+@media(min-width: 768px){
+
+    .scs-scheme-element{
+        max-width: 570px;
+    }
+
+    .scs-scheme-main-container{
+        height: calc(100vh - 50px);
+    }
+}
