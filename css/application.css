@@ -34,7 +34,6 @@ body {
 /* line 38, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 #moving-background {
   background-image: url("https://joshr95.github.io/myPortfolio/images/network-4851119_1920.jpg"), url("../../images/network-4851119_1920.jpg");
-  /* Fallback for local */
   background-size: cover;
   -webkit-animation: slidein 25s;
   animation: slidein 25s;
