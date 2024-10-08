@@ -108,7 +108,10 @@
     #portfolio{
         height: 100vh;
     }
-
+    
+    #portfolio h2 {
+        font-size: 2.6rem;
+    }
 
     // this shows the 5th and 6th child in portfolio-grid. i have set these unshown items 
     // to dislay none with the .hidden class to allow this to work

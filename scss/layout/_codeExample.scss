@@ -1,4 +1,4 @@
-.code-example-picture {
+.code-example-background {
     position: absolute;
     top: 0; 
     left: 0;
@@ -29,5 +29,64 @@
     }
     p{
         font-size: 1.4rem;
+    }
+}
+
+.code-example-coming-pic{
+    max-height: 500px;
+    max-width: 80%;
+    border-radius: 5%;
+    box-shadow: 0 5px 20px $white;  
+}
+
+// this centers the image in the center of the screen 
+.image-container {
+    display: flex;
+    justify-content: center; // Centers the image horizontally
+    margin-top: 20px; // Adjusts the space above the image
+}
+
+.code-example-container {
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100vh; 
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+/// MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////
+
+@media(max-width: 500px){
+    
+    // pushes the image down a bit to look better in small viewports
+    .image-container{
+        margin-top: 150px;
+    }
+}
+
+
+@media(max-width: 767px){
+    
+    // this takes off the height of the footer from the background image
+    // as it usually takes 100vh, in smaller views it leaves a gap at the bottom.
+    .code-example-container{
+        height: calc(100vh - 50px);
+    }
+
+}
+
+@media(min-width: 768px){
+
+    // this makes the footer appear in the 100vh and not needing to scroll a bit to see it 
+    .code-example-main-container{
+        height: calc(100vh - 50px);
+    }
+}
+
+@media(min-width: 1100px){
+    .code-example-title{
+        font-size: 1.8rem;
     }
 }
