@@ -249,7 +249,7 @@ nav {
 }
 
 /* line 20, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
-.nav-initals a {
+.nav-initials a {
   text-align: center;
   font-size: 3rem;
   margin-bottom: -20px;
@@ -259,8 +259,8 @@ nav {
 }
 
 /* line 33, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
-.nav-initals a h1:active,
-.nav-initals a h1.clicked {
+.nav-initials a h1:active,
+.nav-initials a h1.clicked {
   color: white;
   background-color: #5d777e;
   box-shadow: inset 0 0 5px #0c2e3b;
@@ -365,7 +365,7 @@ nav {
     display: none;
   }
   /* line 165, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
-  .nav-initals {
+  .nav-initials {
     margin-bottom: 75px;
   }
 }

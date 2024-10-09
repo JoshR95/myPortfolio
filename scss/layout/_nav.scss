@@ -16,15 +16,15 @@ nav{
     align-items: center; // Center items horizontally
 }
 
-// aligns the initals 
-.nav-initals a{
+// aligns the initials 
+.nav-initials a{
     text-align: center;
     font-size: 3rem;
-    // brings the links closer to the initals 
+    // brings the links closer to the initials 
     margin-bottom: -20px;
     color: $white;
     text-decoration: none;
-    // gives the initals a slight shadow
+    // gives the initials a slight shadow
     text-shadow: 1px 1px 0 black, 
                 -1px -1px 0 black,
                 1px -1px 0 black,
@@ -133,7 +133,7 @@ nav{
     }
 
     // CHANGE THIS TO NONE COMMENTED WHEN IMPLEMENTING JAVA SCRIPT
-    // .nav-initals,
+    // .nav-initials,
     // .links-container,
     // .nav-socials{
     //     display: none;
@@ -162,8 +162,9 @@ nav{
         display: none;
     }
 
-    .nav-initals{
+    .nav-initials{
         margin-bottom: 75px;
     }
     
+
 }
