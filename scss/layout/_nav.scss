@@ -28,7 +28,15 @@ nav{
     text-shadow: 1px 1px 0 black, 
                 -1px -1px 0 black,
                 1px -1px 0 black,
-                -1px 1px 0 black; 
+                -1px 1px 0 black;
+    // this adds a background click effect when pushed 
+    h1:active,
+    h1.clicked {
+        color: $white; 
+        background-color: $primary-color;
+        box-shadow: inset 0 0 5px $fourth-color;
+        padding: 5px 20px;
+    }
 }
 
 // Remove bullet points
@@ -44,12 +52,20 @@ nav{
         padding: 5px;
         box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
     }
+    // this changes the li's background color when clicked 
+    li:active,
+    li.clicked {
+        color: $white; 
+        background-color: $primary-color;
+        box-shadow: inset 0 0 5px $fourth-color; 
+    }
 
     // removes underline
     li a{
         color: $white;
         text-decoration: none;
     }
+
 }
 
 .nav-socials{
