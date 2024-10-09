@@ -1,9 +1,4 @@
 
-.fancy {
-    @include fancy-text;
-  }
-
-
 // this is setting the container height and the way things are positioned within the container
 .hero-container {
     position: relative;
@@ -19,13 +14,21 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $white;
     z-index: 1;
     h1{
-        margin-bottom: 20px;
+        margin-bottom: -10px;
+        
     }
 
+}
+
+.main-title{
+    h1{
+        font-family: $title-font--family;
+        font-weight: $title-font--weight;
+    }
 }
 
 .hero-scroll{
@@ -58,7 +61,7 @@
     //     height: calc(100vh - 76px);
     // }
 
-    
+
     // this is here so we can see the scroll down and arrow in the mobile view view without scrolling
     .hero-scroll{
         margin-bottom: 100px;
@@ -66,10 +69,25 @@
 
 }
 
-@media(min-width: 576px) and (max-width: 767px){
-    .hero-title{
-        font-size: 1.8rem;
+@media(max-width: 575px){
+    .main-title{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+}
 
+@media(min-width: 576px) and (max-width: 767px){
+    .main-title{
+        h1{
+            font-size: 5.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
     }
     .hero-scroll{
         font-size: 1.7rem;
@@ -80,8 +98,13 @@
 }
 
 @media(min-width: 768px) and (max-width: 1099px){
-    .hero-title{
-        font-size: 1.8rem;
+    .main-title{
+        h1{
+            font-size: 7rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
     }
     .hero-scroll{
         font-size: 1.7rem;
@@ -91,14 +114,42 @@
     }
 }
 
-@media(min-width: 1100px){
-    .hero-title{
-        font-size: 2.2rem;
+@media(min-width: 1100px) and (max-width: 1299px){
+    .main-title{
+        h1{
+            font-size: 7rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
     }
     .hero-scroll{
         font-size: 1.9rem;
         .icon-arrow-down{
             font-size: 2.2rem;
+        }
+    }
+}
+
+@media(min-width: 1300px) and (max-width: 1499px){
+    .main-title{
+        h1{
+            font-size: 9rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media(min-width: 1500px) {
+
+    .main-title{
+        h1{
+            font-size: 11rem;
+        }
+        h2{
+            font-size: 3.5rem;
         }
     }
 }
