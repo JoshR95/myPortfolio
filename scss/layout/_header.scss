@@ -1,38 +1,8 @@
-// .line-text {
-//     $random-text: 'foreign terrace';
-//     $stroke-width: 30px * 0.05;
-//     position: relative;
-//     display: inline-block;
-//     font-size: 30px;
-//     font-weight: 800;
-//     text-transform: uppercase;
-//     font-style: italic;
-//     color: transparent;
-//     -webkit-text-stroke-width: $stroke-width;
-//     -webkit-text-stroke-color: white;
-//     white-space: nowrap;
-//     $x: 12px;
-//     $y: 15px;
-//     $step: 1px;
-        
-//     text-shadow: $x $y $fourth-color,
-//                  $x + $step $y + $step $primary-color,
-//                  $x + $step * 2 $y + $step * 2 $primary-color,
-//                  $x + $step * 3 $y + $step * 3 $primary-color,
-//                  $x + $step * 4 $y + $step * 4 $primary-color,
-//                  $x + $step * 5 $y + $step * 5 $primary-color,
-//                  $x + $step * 6 $y + $step * 6 $primary-color,
-//                  $x + $step * 7 $y + $step * 7 $primary-color,
-//   }
 
-// // The header needs a background of -1 so the picture can fit the screen correctly and the writing can go on top
-// header {
-//     background-size: cover; 
-//     background-position: center; 
-//     height: 100vh; 
-//     color: white; 
-//     z-index: -1;
-// }
+.fancy {
+    @include fancy-text;
+  }
+
 
 // this is setting the container height and the way things are positioned within the container
 .hero-container {
@@ -42,19 +12,6 @@
     justify-content: space-between; 
     height: 100vh; 
 }
-
-// // this is making the picture be placed at the top left of the hero-container as this is 
-// // relative positioned, the z index lets it sit behind the text 
-// .hero-picture {
-//     position: absolute;
-//     top: 0; 
-//     left: 0;
-//     height: 100%; 
-//     width: 100%; 
-//     object-fit: cover;
-//     z-index: -1;
-//     filter: brightness(65%);
-// }
 
 .hero-title{
     display: flex;
@@ -66,7 +23,7 @@
     color: $white;
     z-index: 1;
     h1{
-        margin-bottom: -10px;
+        margin-bottom: 20px;
     }
 
 }
