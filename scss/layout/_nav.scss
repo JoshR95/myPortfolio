@@ -116,16 +116,17 @@ nav{
         width: 100%
     }
 
-    .nav-initals,
-    .links-container,
-    .nav-socials{
-        display: none;
-    }
+    // CHANGE THIS TO NONE COMMENTED WHEN IMPLEMENTING JAVA SCRIPT
+    // .nav-initals,
+    // .links-container,
+    // .nav-socials{
+    //     display: none;
+    // }
 
     // IMPORTANT - THIS WIILL NOT BE HIDDEN WHEN I DO JAVA SCRIPT, THE OTHETR BITS 
     // WILL BE AND THEN DROP DOWN 
     .hamburger-icon{
-        display: block;
+        display: none;
     }
 
 }

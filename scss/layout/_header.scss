@@ -1,3 +1,29 @@
+// .line-text {
+//     $random-text: 'foreign terrace';
+//     $stroke-width: 30px * 0.05;
+//     position: relative;
+//     display: inline-block;
+//     font-size: 30px;
+//     font-weight: 800;
+//     text-transform: uppercase;
+//     font-style: italic;
+//     color: transparent;
+//     -webkit-text-stroke-width: $stroke-width;
+//     -webkit-text-stroke-color: white;
+//     white-space: nowrap;
+//     $x: 12px;
+//     $y: 15px;
+//     $step: 1px;
+        
+//     text-shadow: $x $y $fourth-color,
+//                  $x + $step $y + $step $primary-color,
+//                  $x + $step * 2 $y + $step * 2 $primary-color,
+//                  $x + $step * 3 $y + $step * 3 $primary-color,
+//                  $x + $step * 4 $y + $step * 4 $primary-color,
+//                  $x + $step * 5 $y + $step * 5 $primary-color,
+//                  $x + $step * 6 $y + $step * 6 $primary-color,
+//                  $x + $step * 7 $y + $step * 7 $primary-color,
+//   }
 
 // // The header needs a background of -1 so the picture can fit the screen correctly and the writing can go on top
 // header {
@@ -71,9 +97,9 @@
 @media(max-width: 767px){
     
     // this is taking of the height of the nav bar in mobile viewports so the header and nav combined are 100vh
-    header{
-        height: calc(100vh - 76px);
-    }
+    // header{
+    //     height: calc(100vh - 76px);
+    // }
 
     
     // this is here so we can see the scroll down and arrow in the mobile view view without scrolling
@@ -86,6 +112,7 @@
 @media(min-width: 576px) and (max-width: 767px){
     .hero-title{
         font-size: 1.8rem;
+
     }
     .hero-scroll{
         font-size: 1.7rem;
