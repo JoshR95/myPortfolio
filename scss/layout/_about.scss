@@ -45,10 +45,8 @@
 
 .about-title{
     h1{
-        // these three lines of code give the text a colour gradient
-        background: -webkit-linear-gradient(45deg, $white, $third-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // this mixin makes the colour shift from white to second color
+        @include color-gradient;
     }
 }
 

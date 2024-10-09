@@ -17,3 +17,12 @@
     }
 }
 
+//////////////////////////////////////////////////////////////////////////
+/// COLOR SHIFT FOR TITLES
+//////////////////////////////////////////////////////////////////////////
+
+@mixin color-gradient(){
+    background: -webkit-linear-gradient(45deg, $white, $second-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
