@@ -16,7 +16,7 @@
     justify-content: center;
     text-align: center;
     color: $white;
-    background-color: $fourth-color;
+    background: linear-gradient(to bottom right, $fourth-color, $second-color );
     overflow: hidden; /* Prevents overflow */
     padding: 20px; /* Adds padding */
     box-sizing: border-box; /* Ensures padding is included in width/height */
@@ -43,12 +43,7 @@
     margin-top: 70px;
 }
 
-.about-title{
-    h1{
-        // this mixin makes the colour shift from white to second color
-        @include color-gradient;
-    }
-}
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
