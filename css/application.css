@@ -731,7 +731,7 @@ textarea::placeholder {
 /* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_scsScheme.scss */
 .scs-scheme-element {
   width: 100%;
-  font-size: .8rem;
+  font-size: 1rem;
   background-color: #475b61;
   box-shadow: 0 5px 10px white;
   text-align: center;
