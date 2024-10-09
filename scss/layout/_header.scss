@@ -28,6 +28,10 @@
     h1{
         font-family: $title-font--family;
         font-weight: $title-font--weight;
+        // these three lines of code give the text a colour gradient
+        background: -webkit-linear-gradient(45deg, $second-color, $white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 

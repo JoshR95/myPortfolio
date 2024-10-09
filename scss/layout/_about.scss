@@ -6,7 +6,7 @@
     width: 100%; 
     object-fit: cover;
     z-index: -1;
-    filter: brightness(75%);
+    filter: brightness(60%);
 }
 
 #about-text{
@@ -41,6 +41,15 @@
     color: $white;
     font-size: 1.7rem;
     margin-top: 70px;
+}
+
+.about-title{
+    h1{
+        // these three lines of code give the text a colour gradient
+        background: -webkit-linear-gradient(45deg, $white, $third-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 
