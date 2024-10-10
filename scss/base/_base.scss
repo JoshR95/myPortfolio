@@ -2,8 +2,8 @@
 html{
     font-size: 16px;
     line-height: 1.42857143;
-    font-family: $primary-font--family; // Correct variable name
-    font-weight: $primary-font--weight; // Correct variable name
+    font-family: $primary-font--family;
+    font-weight: $primary-font--weight; 
 }
 
 
@@ -13,8 +13,8 @@ html{
 
 
 html, body {
-    margin: 0;  // Remove default margin
-    padding: 0; // Remove default padding
+    margin: 0;
+    padding: 0; 
 }
 
 .container{
@@ -67,25 +67,13 @@ to {background-position: -100px 0px;background-size:3750px;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// MEDIA BREAKPOINTS - 
-
-// XS ? no media queries as this is default when developing (mobile first, aim to make sure this works from 280px and above)
-
-// Small devices ? min-width: 576px and up
-
-// Medium devices ? min-width: 768px and up
-
-// Large devices ? min-width 992px and up
-
-// Extra-large devices ? min-width: 1200px and up
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// this sets the main containers content to 80%, then the nav is set to 20% in the nav.scss, this means
-// we can have the nav running down the left, the main content on the right at 100% of the vh together,
-// then the margin-left will push the main content to the right by whatever the navs width is. 
+// This taking off the navs width from the main-container which most of my content is in, it then shifts it right by 200px
+// so its center aligned 
 @media(min-width: 768px){
     .main-container {
         width: calc(100% - 200px);

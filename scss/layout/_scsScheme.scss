@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100%; // Ensure it takes full height of the parent
-    width: 100%; // Ensure it takes full width of the parent
+    min-height: 100%;
+    max-height: 100%;
     color: $white;
 }
 
@@ -121,21 +121,3 @@
         max-width: 1400px;
     }
 }
-
-//////////////////////////////////////////////////////////////////////////////////////
-/// MEDIA HEIGHT 
-//////////////////////////////////////////////////////////////////////////////////////
-
-// @media(min-height: 1000px) and (max-height: 1200px){
-//     .scs-scheme-element{
-//         margin: 40px 0;
-//         padding: 25px;
-//     }
-// }
-
-// @media(min-height: 1201px){
-//     .scs-scheme-element{
-//         margin: 70px 0;
-//         padding: 30px;
-//     }
-// }

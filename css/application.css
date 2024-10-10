@@ -68,7 +68,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 90, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+  /* line 78, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
   .main-container {
     width: calc(100% - 200px);
     margin-left: 200px;
@@ -467,7 +467,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  /* line 84, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 78, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .project-item {
     position: relative;
     top: 0;
@@ -479,57 +479,57 @@ footer {
     top: -10px;
     transition: top 0.5s ease;
   }
-  /* line 86, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 80, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .project-item a {
     font-size: 14px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 96, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 89, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  /* line 101, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 94, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .project-item {
     margin-bottom: 50px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 110, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 103, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   #portfolio h2 {
     font-size: 2.6rem;
   }
-  /* line 116, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 109, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid .project-item:nth-child(n+5):nth-child(-n+6) {
     display: block;
   }
-  /* line 120, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 113, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  /* line 125, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 118, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .project-item {
     margin-bottom: 50px;
   }
 }
 
 @media (min-width: 1100px) {
-  /* line 132, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 125, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   #portfolio h2 {
     font-size: 2.6rem;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 140, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 133, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid .project-item.hidden:nth-child(n+5):nth-child(-n+9) {
     display: block;
   }
-  /* line 144, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
+  /* line 137, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_portfolio.scss */
   .portfolio-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -665,7 +665,6 @@ textarea::placeholder {
 /* line 12, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
 #about-text {
   display: flex;
-  /* Keep flex properties */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -673,17 +672,11 @@ textarea::placeholder {
   color: white;
   background: linear-gradient(to bottom right, #0c2e3b, #548597);
   overflow: hidden;
-  /* Prevents overflow */
   padding: 20px;
-  /* Adds padding */
   box-sizing: border-box;
-  /* Ensures padding is included in width/height */
   width: 100%;
-  /* Ensures it takes full width of the parent */
   margin: 0 auto;
-  /* Centers the container */
   height: auto;
-  /* Allows height to adjust based on content */
 }
 
 /* line 26, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_about.scss */
@@ -883,7 +876,7 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  width: 100%;
+  max-height: 100%;
   color: white;
 }
 
