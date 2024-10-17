@@ -1,23 +1,28 @@
 /* line 2, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 html {
+  scroll-behavior: smooth;
+}
+
+/* line 7, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+html {
   font-size: 16px;
   line-height: 1.42857143;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
-/* line 10, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 15, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 15, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 20, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* line 20, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 26, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -25,13 +30,13 @@ html, body {
   padding-right: 15px;
 }
 
-/* line 29, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 35, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* line 39, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+/* line 45, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 #moving-background {
   background-image: url("https://joshr95.github.io/myPortfolio/images/network-4851119_1920.jpg"), url("../../images/network-4851119_1920.jpg");
   background-size: cover;
@@ -68,7 +73,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 78, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+  /* line 84, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
   .main-container {
     width: calc(100% - 200px);
     margin-left: 200px;
