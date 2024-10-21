@@ -43,6 +43,9 @@
         margin: 0 auto; // This Centers the button
         text-decoration: none;
     }
+    p{
+        color: $white;
+    }
     // this changes the buttons colour when clicked
     a:active,
     a.clicked {
