@@ -38,7 +38,7 @@ body {
 
 /* line 45, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
 #moving-background {
-  background-image: url("https://joshr95.github.io/myPortfolio/images/network-4851119_1920.jpg"), url("../../images/network-4851119_1920.jpg");
+  background-image: url("https://joshr95.github.io/myPortfolio/images/network-4851119_1920.jpg"), url("../images/network-4851119_1920.jpg");
   background-size: cover;
   -webkit-animation: slidein 25s;
   animation: slidein 25s;
@@ -263,7 +263,10 @@ nav {
   margin-bottom: -20px;
   color: white;
   text-decoration: none;
-  text-shadow: 1px 1px 0 black,  -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  text-shadow: 1px 1px 0 black, 
+ -1px -1px 0 black,
+ 1px -1px 0 black,
+ -1px 1px 0 black;
 }
 
 /* line 34, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
