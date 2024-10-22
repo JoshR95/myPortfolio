@@ -40,6 +40,27 @@ nav{
     }
 }
 
+// here im having the links visibility: hidden until the burger is clicked and the js will then add a is-active class to show it 
+// ive also added a transition so it slows comes down
+.links-container {
+    visibility: hidden;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    // this is saying how quickly to change the height, opacity and visability, this for the menu going up/disappearing
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s 0.5s;
+    padding-left: 0px;
+}
+
+.links-container.is-active {
+    visibility: visible;
+    max-height: 500px;
+    opacity: 1;
+    // only change here is instant visibility for screen reader and immediate interaction. this for the menu coming down
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s;
+}
+
 // Remove bullet points
 .pages-links{
     list-style-type: none;
@@ -79,12 +100,6 @@ nav{
     }
 }
 
-.links-container{
-    text-align: center;
-    padding-left: 0px;
-}
-
-
 
 // HAMBURGER ICON 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -94,6 +109,7 @@ nav{
     display: block;
     width: 50px;
     height: 35px;
+    margin: 30px;
     cursor: pointer;
     appearance: none;
     background: none;
@@ -101,6 +117,7 @@ nav{
     border: none;
 }
 
+// this is using after and before to add lines above and below the main .bar line
 .hamburger .bar, .hamburger:after, .hamburger:before {
     content: '';
     display: block;
@@ -126,38 +143,9 @@ nav{
 
     &:after {
         transform: translate(0, 6px);
-        width: 60%;
+        width: 55%;
     }
 }
-
-
-
-// // We make this relative to the hamburger lines can be positioned according to this elements position
-// .hamburger-icon{
-//     position: relative; 
-//     width: 100px;
-//     height: 56px;
-//     margin: 10px 0px;
-
-// }
-
-// .hamburger-line{
-//     width: 45px;
-//     height: 4px;
-//     background-color: #fff;
-//     margin: 8px 0;
-    
-// }
-
-// // This moves relative to the hamburger-icons top left corners position because of absolute
-// // we then move it down and left 50%, this would have it off the box, so we use transfrom: translate()
-// // to move it back right and up 50% of its own width; effectivley centering it.
-// .hamburger-line-container{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%); 
-// }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -176,18 +164,12 @@ nav{
         width: 100%
     }
 
-    // CHANGE THIS TO NONE COMMENTED WHEN IMPLEMENTING JAVA SCRIPT
-    // .nav-initials,
-    // .links-container,
-    // .nav-socials{
-    //     display: none;
-    // }
 
-    // IMPORTANT - THIS WIILL NOT BE HIDDEN WHEN I DO JAVA SCRIPT, THE OTHETR BITS 
-    // WILL BE AND THEN DROP DOWN 
-    .hamburger-icon{
+    .nav-container .nav-initials,
+    .nav-socials{
         display: none;
     }
+
 
 }
 
@@ -202,8 +184,14 @@ nav{
         position: fixed;
     }
 
-    .hamburger-icon{
+    .hamburger{
         display: none;
+    }
+
+    .links-container {
+        visibility: visible; // we have to set it to visible or it wouldnt show 
+        max-height: none; // this stops the container being restricted in height
+        opacity: 1; // we have to set an opacity value or it wouldnt show because of how weve coded the dropdown bar to appear
     }
 
     .nav-initials{
