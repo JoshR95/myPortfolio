@@ -134,17 +134,22 @@ nav{
     .bar {
         transform: rotate(90deg) translate(0, 0);
         opacity: 1;
+        border-radius: 3px;
     }
 
     &:before {
         transform: translate(0, -10px);
         width: 100%;
+        border-radius: 3px;
     }
 
     &:after {
         transform: translate(0, 6px);
         width: 55%;
+        border-radius: 3px;
     }
+
+    
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -192,6 +197,7 @@ nav{
         visibility: visible; // we have to set it to visible or it wouldnt show 
         max-height: none; // this stops the container being restricted in height
         opacity: 1; // we have to set an opacity value or it wouldnt show because of how weve coded the dropdown bar to appear
+        transition: none; // this line stops there being any transition like when the drop down comes down
     }
 
     .nav-initials{
