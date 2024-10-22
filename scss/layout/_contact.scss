@@ -1,77 +1,96 @@
-#contact-me{
+#contact-me {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: $fourth-color;
-    h2{
+    h2 {
         color: $white;
         font-size: 2.2rem;
         text-decoration: underline;
         margin-bottom: -10px;
     }
-    p{
+    p {
         font-size: 1.3rem;
         color: $white;
-        
     }
-    .icon-arrow-down{
+    .icon-arrow-down {
         font-size: 2rem;
         color: $white;
         margin-bottom: 20px;
     }
 }
 
-.contact-form{
+.contact-form {
     width: 80%;
 }
+
 // this makes the inputs the full width of its container
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
 }
 
-.contact-form div{
-    margin-bottom: 10px;
+.input-control {
+    position: relative;
+    margin-bottom: 20px;
 }
+
+// this adds some error text below the input box if form validation fails.
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
 // this colours the input fields background colour and the text when typed into it 
-.colored-input{
-    background-color: $primary-color;
-    box-shadow: inset 0 0 3px $white; 
-    color: $white;
+.colored-input {
+    background-color: $white;
+    color: $primary-color;
     &:focus {
         // this changes the color of the outline when the input box is clicked on 
-        outline: 2px solid $white;
+        outline: none;
+        border-color: #1a73e8;
     }
 }
 
-// this makes the placeholder text white 
+// this makes the placeholder text grey
 // had to add font family because text area was being weird and had a different font.
 input::placeholder,
 textarea::placeholder {
     font-family: $primary-font--family;
     font-weight: $primary-font--weight;
-    color: $white; 
-    opacity: 1; 
+    color: #9e9e9e;
+    opacity: 1;
 }
 
-.contact-me-submit{
-    font-size: 1.2rem;
+.contact-me-submit {
+    font-size: 16px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px 20px;
     border-radius: 5px;
     color: $white;
-    background-color: $primary-color;
-    box-shadow: inset 0 0 1px $white; 
-    border: 2px solid $second-color;
-    &:active,
-    &.clicked {
-        color: $fourth-color; 
-        background-color: $white;
-        box-shadow: inset 0 0 5px $fourth-color; 
+    background-color: #1a73e8;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #1557b0;
     }
 }
 
@@ -79,23 +98,22 @@ textarea::placeholder {
     height: 150px;
 }
 
-.bottom-scroll{
+.bottom-scroll {
     text-decoration: none;
     color: $white;
     font-size: 1.7rem;
     margin-bottom: 20px;
-    p{
+    p {
         margin-bottom: 0;
     }
 }
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-@media(min-width: 1100px){
+@media(min-width: 1100px) {
     #contact-me h2 {
         font-size: 2.6rem;
     }
-  }
+}

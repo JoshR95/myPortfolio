@@ -156,34 +156,41 @@
           <h2>Get in contact</h2>
           <p>If you'd like to contact me please use the form below </p>
           <span class="icon-arrow-down"></span>
-          <form class="contact-form" method="POST" action="/submit-form">
-            <div>
+
+          <form id= "contact-form" class="contact-form" method="POST" action="/submit-form">
+            <div class="input-control">
               <label for="fname"></label>
               <input type="text" id="fname" name="fname"  class="colored-input" placeholder="First Name">
+              <div class="error"></div>
             </div>
-            <div>
+            <div class="input-control">
               <label for="lname"></label>
               <input type="text" id="lname" name="lname" class="colored-input" placeholder="Last Name">
+              <div class="error"></div>
             </div>
-            <div>
+            <div class="input-control">
               <label for="email"></label>
               <input type="text" id="email" name="email" class="colored-input" placeholder="Email Address">
+              <div class="error"></div>
             </div>
-            <div>
+            <div class="input-control">
               <label for="phoneNumber"></label>
               <input type="text" id="phoneNumber" name="phoneNumber" class="colored-input" placeholder="Phone Number">
+              <div class="error"></div>
             </div>
-            <div>
+            <div class="input-control">
               <label for="subject"></label>
               <input type="text" id="subject" name="subject" class="colored-input" placeholder="Subject">
+              <div class="error"></div>
             </div>
-            <div>
+            <div class="input-control">
               <label for="message"></label>
               <textarea id="message" name="message" class="colored-input large-input" placeholder="Message"></textarea>
+              <div class="error"></div>
             </div>
 
             <div>
-              <button class="contact-me-submit" type="submit">Submit</button>
+              <button id="contact-submit-box" class="contact-me-submit" type="submit">Submit</button>
             </div>
           </form>
           <a href="#" class="bottom-scroll">
