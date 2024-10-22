@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function typeWriter() {
         if (i < text.length) { // here were checking if the words is done yet 
             typewriter.textContent += text.charAt(i); // here we add the current letter were on to typewriters (h1) content
-            i++; // this increments the counter
+            i++; // this increments the counter and moves us to the next character in typewriter
             setTimeout(typeWriter, speed); // this sets the timer to each letter being added
         }
     }

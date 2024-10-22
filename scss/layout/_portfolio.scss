@@ -23,7 +23,8 @@
 
     // this is keeping the image at 100% of its container
     img {
-        width: 100%; 
+        width: 100%;
+        max-width: 450px; 
         height: auto;
         border-radius: 10%;
         box-shadow: 0 5px 12px $white;  
@@ -96,6 +97,9 @@
     
     .project-item{
         margin-bottom: 50px;
+        img{
+            max-width: 310px;
+        }
     }
 
 }
@@ -120,6 +124,9 @@
 
     .project-item{
         margin-bottom: 50px;
+        img {
+            max-width: 280px;
+        }
     }
 
   }
