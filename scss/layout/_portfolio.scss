@@ -42,6 +42,10 @@
         display: inline-block; // Changes this to block for centering
         margin: 0 auto; // This Centers the button
         text-decoration: none;
+        &:hover {
+            background-color: $fourth-color-light;
+            box-shadow: inset 0 0 5px $fourth-color;
+        }
     }
     p{
         color: $white;

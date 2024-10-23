@@ -32,7 +32,7 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #f0f0f0;
+    border: 2px solid $third-color;
     border-radius: 5px;
 }
 
@@ -51,22 +51,24 @@
     top: 100%;
 }
 
-.input-control.error input {
+.input-control.error input,
+.input-control.error textarea {
     border-color: #ff3860;
 }
 
-.input-control.success input {
+.input-control.success input,
+.input-control.success textarea {
     border-color: #09c372;
 }
 
 // this colours the input fields background colour and the text when typed into it 
-.colored-input {
-    background-color: $white;
-    color: $primary-color;
+.colored-input,
+textarea.colored-input {
+    background-color: $primary-color;
+    color: $white;
     &:focus {
-        // this changes the color of the outline when the input box is clicked on 
         outline: none;
-        border-color: #1a73e8;
+        border-color: $white;
     }
 }
 
@@ -76,7 +78,7 @@ input::placeholder,
 textarea::placeholder {
     font-family: $primary-font--family;
     font-weight: $primary-font--weight;
-    color: #9e9e9e;
+    color: $white;
     opacity: 1;
 }
 
@@ -86,11 +88,13 @@ textarea::placeholder {
     padding: 10px 20px;
     border-radius: 5px;
     color: $white;
-    background-color: #1a73e8;
-    border: none;
+    background-color: $primary-color;
+    box-shadow: inset 0 0 5px $fourth-color;
+    border: 3px solid $second-color;
     cursor: pointer;
     &:hover {
-        background-color: #1557b0;
+        background-color: $primary-color-dark;
+        box-shadow: inset 0 0 5px $fourth-color;
     }
 }
 

@@ -52,30 +52,39 @@ const subject = document.getElementById('subject');
 const message = document.getElementById('message');
 const contactSubmitBox = document.getElementById('contact-submit-box');
 
+// Getting a reference to the form itself
 const contactForm = document.getElementById('contact-form')
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault(); // prevent forms from submitting so we can validate inputs
 
+    // this runs the function we wrote below to check the inputs are added/correct.
     validateInputs();
 });
 
 // setting a succes message
 const setSuccess = element => {
+    // this returns the wrapper div <div class="input-control">
     const inputControl = element.parentElement;
+    // this finds the error class inside the input control div where the error will be displayed
     const errorDisplay = inputControl.querySelector('.error');
 
+    // this resets the text 
     errorDisplay.innerText = '';
+    // this adds .success to the container div so it can be styled with css to green to show its good
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
 }
 
 // setting an error message
+// this is taking two parameters which we set below in validate inputs - setError(fname, 'please add a first name');
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
 
+    // instead od wiping the inner text like success it adds the message parameter we set bellow - 'please add a first name' etc...
     errorDisplay.innerText = message;
+    // also adds error class for css stlying and removes the success class
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
 }
@@ -84,6 +93,13 @@ const setError = (element, message) => {
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
+}
+
+// Add this function for UK phone number validation
+const isValidUKPhoneNumber = phoneNumber => {
+    // This regex covers most UK phone number formats
+    const ukPhoneRegex = /^(?:(?:\+44\s?|0)7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
+    return ukPhoneRegex.test(phoneNumber);
 }
 
 const validateInputs = () => {
@@ -123,6 +139,8 @@ const validateInputs = () => {
     // phone number
     if(phoneNumberValue === ''){
         setError(phoneNumber, 'please add a valid phone number');
+    } else if (!isValidUKPhoneNumber(phoneNumberValue)) {
+        setError(phoneNumber, 'Please provide a valid UK phone number');
     } else {
         setSuccess(phoneNumber);
     }
