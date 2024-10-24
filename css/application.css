@@ -319,26 +319,31 @@ nav {
 }
 
 /* line 88, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+.pages-links li:hover {
+  background-color: #426876;
+}
+
+/* line 93, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .pages-links li:active, .pages-links li.clicked {
   color: white;
   background-color: #5d777e;
   box-shadow: inset 0 0 5px #0c2e3b;
 }
 
-/* line 96, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 101, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .nav-socials {
   text-align: center;
   padding-bottom: 10px;
 }
 
-/* line 99, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 104, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .nav-socials a {
   font-size: 2rem;
   color: white;
   text-decoration: none;
 }
 
-/* line 110, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 115, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .hamburger {
   position: relative;
   display: block;
@@ -352,7 +357,7 @@ nav {
   border: none;
 }
 
-/* line 124, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 129, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .hamburger .bar, .hamburger:after, .hamburger:before {
   content: '';
   display: block;
@@ -363,21 +368,21 @@ nav {
   transition: 0.4s;
 }
 
-/* line 137, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 142, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .hamburger.is-active .bar {
   transform: rotate(90deg) translate(0, 0);
   opacity: 1;
   border-radius: 3px;
 }
 
-/* line 143, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 148, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .hamburger.is-active:before {
   transform: translate(0, -10px);
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 149, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+/* line 154, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
 .hamburger.is-active:after {
   transform: translate(0, 6px);
   width: 55%;
@@ -385,11 +390,11 @@ nav {
 }
 
 @media (max-width: 767px) {
-  /* line 171, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 176, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   nav {
     width: 100%;
   }
-  /* line 176, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 181, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .nav-container .nav-initials,
   .nav-socials {
     display: none;
@@ -397,25 +402,25 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 188, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 193, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   nav {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
     position: fixed;
   }
-  /* line 195, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 200, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .hamburger {
     display: none;
   }
-  /* line 199, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 204, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .links-container {
     visibility: visible;
     max-height: none;
     opacity: 1;
     transition: none;
   }
-  /* line 206, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 211, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .nav-initials {
     margin-bottom: 75px;
   }

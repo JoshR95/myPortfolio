@@ -84,6 +84,11 @@ nav{
         text-decoration: none;
     }
 
+    // this darkens the background on hover so you can tell your hovering over it
+    &:hover{
+        background-color: $second-color-dark;
+    }
+
     // this changes the li's background color when clicked 
     &:active,
     &.clicked {
