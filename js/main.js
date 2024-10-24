@@ -160,3 +160,10 @@ const validateInputs = () => {
     }
 
 };
+
+document.querySelectorAll('.pages-links li').forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('clicked');
+        console.log('Clicked:', item.classList.contains('clicked')); // Debug log
+    });
+});
