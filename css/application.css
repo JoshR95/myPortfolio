@@ -53,27 +53,27 @@ body {
 @-webkit-keyframes slidein {
   from {
     background-position: top;
-    background-size: 4000px;
+    background-size: 2600px;
   }
   to {
     background-position: -100px 0px;
-    background-size: 3750px;
+    background-size: 3200px;
   }
 }
 
 @keyframes slidein {
   from {
     background-position: top;
-    background-size: 4000px;
+    background-size: 2600px;
   }
   to {
     background-position: -100px 0px;
-    background-size: 3750px;
+    background-size: 3200px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 84, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
+  /* line 95, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/base/_base.scss */
   .main-container {
     width: calc(100% - 200px);
     margin-left: 200px;
@@ -498,7 +498,7 @@ footer {
   width: 100px;
   height: 30px;
   padding: 1px;
-  font-size: .78rem;
+  font-size: .65rem;
   color: white;
   background-color: #548597;
 }
