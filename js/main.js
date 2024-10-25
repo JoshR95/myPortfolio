@@ -162,3 +162,9 @@ const validateInputs = () => {
 };
 
 
+function showLargeImage(src) {
+    const largeImage = document.getElementById('largeImage');
+    const container = document.getElementById('largeImageContainer');
+    largeImage.src = src;
+    container.style.display = 'flex';
+  }

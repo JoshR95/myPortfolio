@@ -1,3 +1,26 @@
+
+.code-example-main-container {
+    min-height: 100vh; // This ensures it takes at least the full viewport height
+}
+
+.code-example-title{
+    h1{
+        // this mixin makes the colour shift from white to second color
+        @include color-gradient;
+        margin-bottom: 30px;
+    }
+}
+
+.code-example-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
 .code-example-background {
     position: absolute;
     top: 0; 
@@ -8,80 +31,70 @@
     z-index: -1;
 }
 
-.code-example-text{
+.code-example-pic {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0 5px 20px $white;
+    justify-self: center;
+}
+
+// this keeps the picture and text for code examples aligned and stacked
+.code-example-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: $fourth-color;
-    background-color: $white;
-    box-shadow: inset 0 0 15px $fourth-color; 
-    height: 400px;
-    h2,
+    h3{
+        font-size: 1rem;
+        color: $white;
+        text-decoration: underline;
+    }
+    // this is so the paragraph is smaller than the header
     p{
-        margin: 0px;
-        padding: 20px 0 20px 20px
-    }
-    h2{
-        font-size: 2.2rem;
-    }
-    p{
-        font-size: 1.4rem;
+        width: 80%;
+        font-size: .8rem;
+        color: $white;
+
     }
 }
 
-.code-example-coming-pic{
-    max-height: 500px;
-    max-width: 80%;
-    border-radius: 5%;
-    box-shadow: 0 5px 20px $white;  
-}
 
-// this centers the image in the center of the screen 
-.image-container {
-    display: flex;
-    justify-content: center; // Centers the image horizontally
-    margin-top: 20px; // Adjusts the space above the image
-}
 
-.code-example-container {
-    position: relative;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    height: 100vh; 
-}
+/// LARGE IMAGE ON CLICK
+/////////////////////////////////////////////////////////////////////////////////
 
-.code-example-title{
-    h1{
-        // this mixin makes the colour shift from white to second color
-        @include color-gradient;
-    }
-}
+.large-image-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .large-image-container img {
+    max-width: 90%;
+    max-height: 90%;
+  }
 
 /////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 /////////////////////////////////////////////////////////////////////////////////
 
-@media(max-width: 500px){
-    
-    // pushes the image down a bit to look better in small viewports
-    .image-container{
-        margin-top: 150px;
+@media (min-width: 768px) {
+    .code-example-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
     }
-}
-
-
-@media(max-width: 767px){
-    
-    // this takes off the height of the footer from the background image
-    // as it usually takes 100vh, in smaller views it leaves a gap at the bottom.
-    .code-example-container{
-        height: calc(100vh - 50px);
-    }
-
-}
+  }
 
 @media(min-width: 450px) and (max-width: 767px){
     .code-example-title{
@@ -92,13 +105,20 @@
             font-size: 1.8rem;
         }
     }
+    .code-example-content{
+        h3{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1099px){
 
-    // this makes the footer appear in the 100vh and not needing to scroll a bit to see it 
-    .code-example-main-container{
-        height: calc(100vh - 50px);
+    .code-example-pic {
+        height: 300px;
     }
 
     .code-example-title{
@@ -109,15 +129,49 @@
             font-size: 2.2rem;
         }
     }
+    .code-example-content{
+        h3{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
 }
 
 @media(min-width: 1100px){
+    .code-example-pic {
+        height: 400px;
+    }
+
     .code-example-title{
         h1{
             font-size: 5.5rem;
         }
         h2{
             font-size: 2.8rem;
+        }
+    }
+}
+
+@media(min-width: 1100px) and (max-width: 1349px){
+    .code-example-content{
+        h3{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width: 1350px){
+    .code-example-content{
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1.2rem;
         }
     }
 }
