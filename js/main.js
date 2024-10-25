@@ -97,9 +97,13 @@ const isValidEmail = email => {
 
 // Add this function for UK phone number validation
 const isValidUKPhoneNumber = phoneNumber => {
-    // This regex covers most UK phone number formats
-    const ukPhoneRegex = /^(?:(?:\+44\s?|0)7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
-    return ukPhoneRegex.test(phoneNumber);
+    // Remove all non-digit characters
+    const cleanedNumber = phoneNumber.replace(/\D/g, '');
+    
+    // Regex for various UK phone number formats
+    const ukPhoneRegex = /^(?:(?:(?:00|\+)44|0)(?:1[0-9]{8,9}|[23]\d{9}|7(?:[1345789]\d{8}|624\d{6})))$/;
+    
+    return ukPhoneRegex.test(cleanedNumber);
 }
 
 const validateInputs = () => {
