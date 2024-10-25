@@ -32,6 +32,7 @@
 }
 
 .code-example-pic {
+    position: relative; // Add this lines
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -48,6 +49,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    // this div is so the tag has a relative position to be adujsted to as the ce tag is absolute it positions of the next
+    // ancestor which is this.
+    .ce-image-container {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+      }
     h3{
         font-size: 1rem;
         color: $white;
@@ -62,11 +70,30 @@
     }
 }
 
+// we have this postioned to it nearest ancestor which is the CE-image-container div
+.CE-click-tag{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    padding: 1px;
+    font-size: .78rem;
+    color: $white;
+    background-color: $second-color;
+
+}
 
 
 /// LARGE IMAGE ON CLICK
 /////////////////////////////////////////////////////////////////////////////////
 
+// here we are hidding a slightly blackedout background with the large image centered
+// js then listens for a click and applys the clicked img to this and shows the img.
 .large-image-container {
     display: none;
     position: fixed;
@@ -80,6 +107,7 @@
     align-items: center;
   }
   
+  // this is setting it to a resonable size of its container
   .large-image-container img {
     max-width: 90%;
     max-height: 90%;

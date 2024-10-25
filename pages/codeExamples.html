@@ -56,7 +56,10 @@
         <div class="container code-example-container">
           <div class="code-example-background"></div>
             <div class="code-example-content">
-              <img src="../images/mixin_example.png" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+              <div class="ce-image-container">
+                <img src="../images/mixin_example.png" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+                <div class="CE-click-tag">click to zoom</div>
+              </div>
               <h3>Mixin example for netmatters homepage</h3>
               <p>
                 This code example shows the use of mixins in my Netmatters homepage code and how it can be used to
@@ -64,26 +67,38 @@
               </p>
             </div>
             <div class="code-example-content">
-              <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+              <div class="ce-image-container">
+                <!-- the onClick will call the showLargeImage function passing its own source (this.src) as an argument -->
+                <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+                <div class="CE-click-tag">click to zoom</div>
+              </div>
               <h3>Coming soon...</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
               </p>
             </div>
             <div class="code-example-content">
-              <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+              <div class="ce-image-container">
+                <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+                <div class="CE-click-tag">click to zoom</div>
+              </div>
               <h3>Coming soon...</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
             </div>
             <div class="code-example-content">
-              <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+              <div class="ce-image-container">
+                <img src="../images/coming-3605857_1920.jpg" class="code-example-pic" onclick="showLargeImage(this.src)" alt="Mixin Example">
+                <div class="CE-click-tag">click to zoom</div>
+              </div>
               <h3>Coming soon...</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
             </div>
+            <!--container initally set to not display, js gives it the image clicked on and then displays on click as large image/zoomed in-->
+            <!--this onClick hides the image when clicked again-->
             <div id="largeImageContainer" class="large-image-container" onclick="this.style.display='none'">
               <img id="largeImage" src="" alt="Large Image">
             </div>
@@ -95,6 +110,7 @@
     <footer>
         <p> Josh Rickards &copy;</p>
     </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/main.js"></script>
   </body>
 

@@ -161,10 +161,29 @@ const validateInputs = () => {
 
 };
 
+//////////////////////////////////////////////////////////////////////////
+/// CODE EXAMPLES ENLARGE IMAGE
+/////////////////////////////////////////////////////////////////////////
+
+// JS VERSION - 
+
+// function showLargeImage(src) {
+//   // assigning the html divs as js variables
+//   const largeImage = document.getElementById('largeImage');
+//   const container = document.getElementById('largeImageContainer');
+//   // assigning the largeImages src to the src of the img clicked (set in html)
+//   largeImage.src = src;
+//   // setting the display of the containrer for the large img to flex so its visible
+//   container.style.display = 'flex';
+// }
 
 function showLargeImage(src) {
-    const largeImage = document.getElementById('largeImage');
-    const container = document.getElementById('largeImageContainer');
-    largeImage.src = src;
-    container.style.display = 'flex';
+    // This selects the element with the id of largeImage, then accesses its attributes and sets its src as the src of the image clicked
+    // we set this in the html to pass the clicked img's src as the parameter here.
+    $('#largeImage').attr('src', src);
+    // here we are accessing the element with the id of largeImageContainer and settings its display to flex so its no longer hidden
+    $('#largeImageContainer').css('display', 'flex');
+    // we dont need to worry about hiding it as this is dont inside the html
   }
+
+  //////////////////////////////////////////////////////////////////////////////////
