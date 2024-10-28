@@ -398,11 +398,11 @@ nav {
 }
 
 @media (max-width: 767px) {
-  /* line 181, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 178, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   nav {
     width: 100%;
   }
-  /* line 186, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 183, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .nav-container .nav-initials,
   .nav-socials {
     display: none;
@@ -410,25 +410,25 @@ nav {
 }
 
 @media (min-width: 768px) {
-  /* line 198, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 195, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   nav {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
     position: fixed;
   }
-  /* line 205, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 202, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .hamburger {
     display: none;
   }
-  /* line 209, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 206, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .links-container {
     visibility: visible;
     max-height: none;
     opacity: 1;
     transition: none;
   }
-  /* line 216, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
+  /* line 213, ../../../../../Nettmaters_main/assessments/myPortfolio/scss/layout/_nav.scss */
   .nav-initials {
     margin-bottom: 75px;
   }
