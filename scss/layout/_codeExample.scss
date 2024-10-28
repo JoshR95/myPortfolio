@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    @include hover-move;
     // this div is so the tag has a relative position to be adujsted to as the ce tag is absolute it positions of the next
     // ancestor which is this.
     .ce-image-container {
